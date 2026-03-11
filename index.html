@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciFi Hub — 33 Specialized Clubs Across 10 Schools</title>
+    <meta name="description" content="Explore SciFi, a premier science and innovation hub featuring 33 specialized clubs and societies across 10 academic schools, fostering research, creativity, and leadership.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/32/c21807/ffffff?text=Φ">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-page="home">
+                <div class="logo-icon">SCI Φ</div>
+                <span>SciFi Hub</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Clubs by School <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu" id="deptDropdown">
+                        <!-- Populated by JS -->
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Community <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="nav-link" data-page="clubs">33 Clubs</a></li>
+                        <li><a href="#" class="nav-link" data-page="competition-teams">Competition Teams</a></li>
+                        <li><a href="#" class="nav-link" data-page="managerial-team">Managerial Team</a></li>
+                        <li><a href="#" class="nav-link" data-page="alumni">Alumni Hub</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link" data-page="achievements">Achievements</a></li>
+                <li><a href="#" class="nav-link" data-page="events">Events</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="mainContent">
+
+        <!-- ==================== HOME PAGE ==================== -->
+        <div id="page-home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero-bg-pattern"></div>
+                <div class="hero-content">
+                    <div class="hero-badge">Excellence in Innovation</div>
+                    <h1 class="hero-title">
+                        <span class="hero-title-line">Where Knowledge</span>
+                        <span class="hero-title-line accent">Meets Action</span>
+                    </h1>
+                    <p class="hero-subtitle">Home to 33 specialized clubs and societies across 10 academic schools, fostering a culture of research, creativity, and leadership.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-page="clubs">Browse all 33 Clubs</button>
+                        <button class="btn btn-outline" data-page="about">Our Mission</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spotlight Section (Restored) -->
+            <section class="section spotlight-section" id="spotlight">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Latest Updates</span>
+                        <h2 class="section-title">In the <span class="accent">Spotlight</span></h2>
+                    </div>
+                    <div class="spotlight-carousel" id="spotlightCarousel">
+                        <div class="spotlight-track">
+                            <div class="spotlight-card">
+                                <div class="spotlight-card-icon"><i class="fas fa-trophy"></i></div>
+                                <h3>National Robotics Championship</h3>
+                                <p>Our team secured 1st place at the National Robotics Championship 2025, competing against 200+ teams nationwide.</p>
+                                <span class="spotlight-date">March 2025</span>
+                            </div>
+                            <div class="spotlight-card">
+                                <div class="spotlight-card-icon"><i class="fas fa-rocket"></i></div>
+                                <h3>Hyperloop Pod Prototype</h3>
+                                <p>Team Velocity unveiled their next-gen hyperloop pod prototype achieving speeds of 400+ km/h in testing.</p>
+                                <span class="spotlight-date">February 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <section class="section about-stats-section" id="aboutStats">
+                <div class="container">
+                    <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
+                        <div class="stat-card" data-count="33">
+                            <div class="stat-icon"><i class="fas fa-users-cog"></i></div>
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Active Clubs</div>
+                        </div>
+                        <div class="stat-card" data-count="10">
+                            <div class="stat-icon"><i class="fas fa-university"></i></div>
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Academic Schools</div>
+                        </div>
+                        <div class="stat-card" data-count="30">
+                            <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+                            <div class="stat-number">0+</div>
+                            <div class="stat-label">Faculty Advisors</div>
+                        </div>
+                        <div class="stat-card" data-count="1000">
+                            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="stat-number">0+</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clubs Section (Departments) -->
+            <section class="section clubs-home-section" id="clubsHome">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Academic Hubs</span>
+                        <h2 class="section-title">Explore by <span class="accent">Schools</span></h2>
+                        <p class="section-desc">Discover specialized clubs categorized by their academic departments and schools.</p>
+                    </div>
+                    <div class="clubs-grid" id="deptHomeGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Competition Teams Section (Restored) -->
+            <section class="section teams-home-section" id="teamsHome">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Elite Performance</span>
+                        <h2 class="section-title">Competition <span class="accent">Teams</span></h2>
+                        <p class="section-desc">Highly specialized teams representing SciFi in global competitions and advanced research.</p>
+                    </div>
+                    <div class="teams-grid" id="teamsGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="section-cta">
+                        <button class="btn btn-primary" data-page="competition-teams">View All Teams</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Snapshots -->
+            <section class="section snapshots-section" id="snapshots">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Gallery</span>
+                        <h2 class="section-title">SciFi <span class="accent">Snapshots</span></h2>
+                    </div>
+                    <div class="snapshots-grid">
+                        <div class="snapshot-item large">
+                            <div class="snapshot-overlay"><span>Annual Tech Fest</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                        <div class="snapshot-item">
+                            <div class="snapshot-overlay"><span>Innovation Lab</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                        <div class="snapshot-item">
+                            <div class="snapshot-overlay"><span>Project Showcase</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                        <div class="snapshot-item">
+                            <div class="snapshot-overlay"><span>Moot Court Session</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                        <div class="snapshot-item large">
+                            <div class="snapshot-overlay"><span>National Hackathon</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                        <div class="snapshot-item">
+                            <div class="snapshot-overlay"><span>Forensic Workshop</span></div>
+                            <div class="snapshot-placeholder"><i class="fas fa-image"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== CLUBS PAGE ==================== -->
+        <div id="page-clubs" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Browse <span class="accent">33 Clubs</span></h1>
+                <p class="page-hero-subtitle">Explore our technical, academic, and research-focused societies</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="clubs-full-grid" id="clubsFullGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== COMPETITION TEAMS PAGE ==================== -->
+        <div id="page-competition-teams" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Competition <span class="accent">Teams</span></h1>
+                <p class="page-hero-subtitle">Elite research and performance squads pushing global boundaries</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="teams-full-grid" id="teamsFullGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== DEPARTMENT PAGE ==================== -->
+        <div id="page-department" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title" id="deptTitle"></h1>
+                <p class="page-hero-subtitle" id="deptDesc"></p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="clubs-full-grid" id="deptClubsGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== CLUB DETAIL PAGE ==================== -->
+        <div id="page-detail" class="page">
+            <section class="page-hero detail-hero" id="detailHero">
+                <h1 class="page-hero-title" id="detailTitle"></h1>
+                <p class="page-hero-subtitle" id="detailTagline"></p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="detail-content" id="detailContent">
+                        <div class="detail-section">
+                            <h2 class="detail-section-title">About the Club</h2>
+                            <p id="detailAbout"></p>
+                        </div>
+                        <div class="detail-section">
+                            <h2 class="detail-section-title">Key Achievements</h2>
+                            <div class="achievements-list" id="detailAchievements"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h2 class="detail-section-title">Latest Projects</h2>
+                            <div class="projects-grid" id="detailProjects"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h2 class="detail-section-title">Faculty Mentorship</h2>
+                            <div class="team-leads-grid" id="detailTeamLeads"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== MANAGERIAL TEAM PAGE ==================== -->
+        <div id="page-managerial-team" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Managerial <span class="accent">Team</span></h1>
+                <p class="page-hero-subtitle">The visionaries steering the SciFi innovation ecosystem</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="managerial-structure">
+                        <div class="mgmt-tier">
+                            <h3 class="tier-title">Faculty Advisor</h3>
+                            <div class="team-member-grid">
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user-tie"></i></div>
+                                    <h4>Dr. Rajesh Kumar</h4>
+                                    <p class="member-role">Faculty Advisor</p>
+                                    <p class="member-dept">School of Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mgmt-tier">
+                            <h3 class="tier-title">Student Executives</h3>
+                            <div class="team-member-grid" style="grid-template-columns: repeat(2, 1fr);">
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                    <h4>Executive Head</h4>
+                                    <p class="member-role">Strategic Operations</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                    <h4>Associate Head</h4>
+                                    <p class="member-role">Coordination</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mgmt-tier">
+                            <h3 class="tier-title">Core Team</h3>
+                            <div class="team-member-grid" style="grid-template-columns: repeat(3, 1fr);">
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-bullhorn"></i></div>
+                                    <h4>PR & Outreach Manager</h4>
+                                    <p class="member-role">Public Relations</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-wallet"></i></div>
+                                    <h4>Finance Manager</h4>
+                                    <p class="member-role">Budget & Finance</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-calendar-alt"></i></div>
+                                    <h4>Events Manager</h4>
+                                    <p class="member-role">Planning & Execution</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-laptop-code"></i></div>
+                                    <h4>Web Dev Lead</h4>
+                                    <p class="member-role">Tech & Systems</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-video"></i></div>
+                                    <h4>Media Head</h4>
+                                    <p class="member-role">Content Production</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-tools"></i></div>
+                                    <h4>Inventory Manager</h4>
+                                    <p class="member-role">Resource Hub</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mgmt-tier">
+                            <h3 class="tier-title">Associate Members</h3>
+                            <div class="team-member-grid" style="grid-template-columns: repeat(4, 1fr);">
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user-circle"></i></div>
+                                    <h4>Tech Associate</h4>
+                                    <p class="member-role">Associate</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user-circle"></i></div>
+                                    <h4>PR Associate</h4>
+                                    <p class="member-role">Associate</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user-circle"></i></div>
+                                    <h4>Ops Associate</h4>
+                                    <p class="member-role">Associate</p>
+                                </div>
+                                <div class="team-member-card">
+                                    <div class="member-avatar"><i class="fas fa-user-circle"></i></div>
+                                    <h4>Design Associate</h4>
+                                    <p class="member-role">Associate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== ALUMNI PAGE ==================== -->
+        <div id="page-alumni" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Alumni <span class="accent">Network</span></h1>
+                <p class="page-hero-subtitle">Celebrating our legacy of industry leaders and innovators</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="alumni-grid">
+                        <p style="text-align: center; color: var(--text-muted);">Alumni directory coming soon...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== ACHIEVEMENTS PAGE ==================== -->
+        <div id="page-achievements" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Core <span class="accent">Achievements</span></h1>
+                <p class="page-hero-subtitle">Celebrating excellence across all 33 specialized clubs</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="achievements-timeline" id="achievementsTimeline">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== EVENTS PAGE ==================== -->
+        <div id="page-events" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Hub <span class="accent">Events</span></h1>
+                <p class="page-hero-subtitle">Workshops, competitions, and seminars happening at SciFi</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="events-grid" id="eventsGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== ABOUT PAGE ==================== -->
+        <div id="page-about" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">About <span class="accent">SciFi Hub</span></h1>
+                <p class="page-hero-subtitle">Empowering the next generation of innovators</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-block">
+                            <div class="about-block-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3>Our Mission</h3>
+                            <p>To provide a dynamic platform for students to explore their technical passions, conduct interdisciplinary research, and develop solutions that address real-world challenges across 10 academic domains.</p>
+                        </div>
+                        <div class="about-block">
+                            <div class="about-block-icon"><i class="fas fa-eye"></i></div>
+                            <h3>Our Vision</h3>
+                            <p>To be the premier student-led hub for specialized technical learning and research, recognized nationally for producing industry-ready innovators.</p>
+                        </div>
+                        <div class="about-values">
+                            <h3 style="text-align: center; margin-bottom: 2rem;">Our Core Principles</h3>
+                            <div class="values-grid">
+                                <div class="value-item"><i class="fas fa-lightbulb"></i><span>Innovation</span></div>
+                                <div class="value-item"><i class="fas fa-handshake"></i><span>Collaboration</span></div>
+                                <div class="value-item"><i class="fas fa-graduation-cap"></i><span>Learning</span></div>
+                                <div class="value-item"><i class="fas fa-star"></i><span>Excellence</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== CONTACT PAGE ==================== -->
+        <div id="page-contact" class="page">
+            <section class="page-hero">
+                <h1 class="page-hero-title">Connect <span class="accent">With Us</span></h1>
+                <p class="page-hero-subtitle">Get involved with 33 specialized clubs</p>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <h4>Location</h4>
+                                <p>SciFi Innovation Hub<br>Academic Complex, South Wing<br>New Delhi, India - 110001</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                                <h4>Channel</h4>
+                                <p>hub@scifi-hub.org<br>mentorship@scifi-hub.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-form-wrapper">
+                            <h3>Inquiry Form</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group row">
+                                    <div class="col"><label>Name</label><input type="text" placeholder="Full Name" required></div>
+                                    <div class="col"><label>Email</label><input type="email" placeholder="email@address.com" required></div>
+                                </div>
+                                <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Your inquiry here..." required></textarea></div>
+                                <button type="submit" class="btn btn-primary btn-full">Submit Request <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">SCI Φ</div>
+                        <span>SciFi Hub</span>
+                    </div>
+                    <p>Science & Innovation Hub — Home to 33 clubs across 10 academic schools.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="clubs">All Clubs</a></li>
+                        <li><a href="#" data-page="achievements">Achievements</a></li>
+                        <li><a href="#" data-page="events">Events</a></li>
+                        <li><a href="#" data-page="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for hub updates and event news.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="your@email.com" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SciFi Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast & Tools -->
+    <div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMessage"></span></div>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

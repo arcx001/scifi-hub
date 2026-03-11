@@ -1,0 +1,24 @@
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Development Server
+node_modules/
+.npm/
+package-lock.json
+
+# Image and Artifact Backups
+.gemini/
+.agents/
+*.png
+*.webp
+*.jpg
+*.jpeg
+!assets/
+
+# Temporary Files
+tmp/
+temp/
+*.log
